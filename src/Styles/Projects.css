@@ -1,0 +1,43 @@
+head, body{background-color: lightcyan}.card{cursor: pointer}.hd{font-size: 25px;font-weight: 550}.card.hover, .card:hover{box-shadow: 0 20px 40px rgba(0, 0, 0, .2)}.img{margin-bottom: 35px;-webkit-filter: drop-shadow(5px 5px 5px #222);filter: drop-shadow(5px 5px 5px #222)}.card-title{font-weight: 600}button.focus, button:focus{outline: 0;box-shadow: none !important}.ft{margin-top: 25px}.chk{margin-bottom: 5px}.rck{margin-top: 20px;padding-bottom: 15px}
+
+
+
+.Box_Projects{
+    padding-left: 2rem;
+}
+
+.card {
+    margin-left: 1rem;
+    position: relative;
+   margin-bottom: 2rem;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 1rem;
+}
+
+.plant {
+  
+    position: absolute;
+    width: 100px;
+    z-index: -1;
+    animation: entry 1.8s ease-in-out forwards, swing 3s ease-in-out 1.8s infinite alternate;
+}
+
+#plant1 {
+    right: 8rem;
+}
+
+#plant2 {
+    left: 7rem;
+}
+
+
+
+
+
+/* animaton code */
+
+
+

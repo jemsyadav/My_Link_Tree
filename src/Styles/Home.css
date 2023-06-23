@@ -8,9 +8,7 @@ body {
    background-size: cover;
    color: brown;
    background-color: #F9DA88;
-   overflow-Y: scroll;
-  
-
+   overflow-y: scroll;
    height: 100vh;
   }
   

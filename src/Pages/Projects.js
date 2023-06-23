@@ -1,8 +1,14 @@
 import React,{useEffect} from 'react'
 import '../../src/Styles/Projects.css'
 import AOS from 'aos';
+import car from '../Images/car1.webp'
+import himotech from '../Images/himotech.jpg'
+import planetix from '../Images/planetIx.png'
+import wedding from '../Images/weeding.jpg'
+import hospital from '../Images/hospital.png'
+import fooddelivery from '../Images/foodDelivery.webp'
 import 'aos/dist/aos.css';
-import rabbit from '../Images/rabbit...webp'
+
 
 const Projects = () => {
     useEffect(() => {
@@ -10,21 +16,34 @@ const Projects = () => {
       }, [])
   return (
     <div>
-     <img src="/static/media/plant1.d3654bffa08570233e29.png" alt="" class="plant" id="plant1"></img>
-        <img src="/static/media/plant1.d3654bffa08570233e29.png" alt="" class="plant" id="plant2"></img>
-      <div class='container mx-auto mt-5 mb-5 col-12 text-center' >
+      <div  class ='container mx-auto mt-5 mb-5 col-12 text-center' >
     <div class="hd">Why People Believe in Us</div>
-    <p><small class="text-muted">Always render more and better service than <br />is expected of you, no matter what your ask may be.</small></p>
+    <p><small class="text-muted">Always render more and better service than <br />is expected .</small></p>
     <div className="Box_Projects">
     <div class="row " >
     <div className="col-md-1">
 
     </div>
+    
         <div  class="card col-md-3 col-12">
             <div  class=" card-content  ">
-                <div data-aos="flip-right"   class="card-body"> <img  class="img" src="https://i.imgur.com/S7FJza5.png" />
+                <div data-aos="flip-right"   class="card-body"> <img  class="img" src={car} width={'50%'}/>
                     <div class="shadow"></div>
-                    <div class="card-title"> Car Repair </div>
+                    
+                    <a href='https://car-repair-gold.vercel.app/'  class="glow-on-hover" type="button">Car Repair</a>  <br /> <br />
+                    <div   class="card-subtitle">
+                        <p> <small class="text-muted">HTML: HTML is used to create and save web document. E.g. Notepad/Notepad++ <br />CSS : (Cascading Style Sheets) Create attractive Layout <br />Bootstrap : responsive design mobile freindly site <br />JavaScript: it is a programming language, commonly use with web browsers.</small> </p>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+      
+        <div class="card col-md-3 col-12">
+            <div class="card-content">
+                <div class="card-body"> <img class="img" src={planetix} width={'50%'} />
+                    <div class="shadow"></div>
+                    <a href='https://planet-ix-flame.vercel.app/'  class="glow-on-hover" type="button">planet IX</a>  <br /> <br />
                     <div class="card-subtitle">
                         <p> <small class="text-muted">HTML: HTML is used to create and save web document. E.g. Notepad/Notepad++ <br />CSS : (Cascading Style Sheets) Create attractive Layout <br />Bootstrap : responsive design mobile freindly site <br />JavaScript: it is a programming language, commonly use with web browsers.</small> </p>
                     </div>
@@ -33,27 +52,17 @@ const Projects = () => {
         </div>
         <div class="card col-md-3 col-12">
             <div class="card-content">
-                <div class="card-body"> <img class="img" src="https://i.imgur.com/S7FJza5.png" />
+                <div class="card-body"> <img class="img" src={himotech} width={'50%'} />
                     <div class="shadow"></div>
-                    <div class="card-title"> Planet IX </div>
+                    <a href='https://hmt-global.vercel.app/'  class="glow-on-hover" type="button">Himotech Global</a>  <br /> <br />
                     <div class="card-subtitle">
-                        <p> <small class="text-muted">We spent thousands of hours creating on algorithm that does this for you in seconds. We collect a small fee from the professional after they meet your</small> </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="card col-md-3 col-12">
-            <div class="card-content">
-                <div class="card-body"> <img class="img" src="https://i.imgur.com/S7FJza5.png" />
-                    <div class="shadow"></div>
-                    <div class="card-title"> HimoTech Global </div>
-                    <div class="card-subtitle">
-                        <p> <small class="text-muted">We spent thousands of hours creating on algorithm that does this for you in seconds. We collect a small fee from the professional after they meet your</small> </p>
+                        <p> <small class="text-muted">HTML: HTML is used to create and save web document. E.g. Notepad/Notepad++ <br />CSS : (Cascading Style Sheets) Create attractive Layout <br />Bootstrap : responsive design mobile freindly site <br />JavaScript: it is a programming language, commonly use with web browsers.</small> </p>
                     </div>
                 </div>
             </div>
         </div>
       </div>
+      <div className="second_section">
       <div class="row " >
     <div className="col-md-1">
 
@@ -61,34 +70,35 @@ const Projects = () => {
         <div class="card col-md-3 col-12">
        
             <div class="card-content">
-                <div class="card-body"> <img class="img" src="https://i.imgur.com/S7FJza5.png" />
+                <div class="card-body"> <img class="img" src={wedding} width={'50%'}/>
                     <div class="shadow"></div>
-                    <div class="card-title"> We're Free </div>
+                    <a href='https://wedding-project-eight.vercel.app/'  class="glow-on-hover" type="button">Wedding</a>  <br /> <br />
                     <div class="card-subtitle">
-                        <p> <small class="text-muted">We spent thousands of hours creating on algorithm that does this for you in seconds. We collect a small fee from the professional after they meet your</small> </p>
+                        <p> <small class="text-muted">HTML: HTML is used to create and save web document. E.g. Notepad/Notepad++ <br />CSS : (Cascading Style Sheets) Create attractive Layout <br />Bootstrap : responsive design mobile freindly site <br />JavaScript: it is a programming language, commonly use with web browsers.</small> </p>
                     </div>
                 </div>
             </div>
         </div>
         <div class="card col-md-3 col-12">
             <div class="card-content">
-                <div class="card-body"> <img class="img" src="https://i.imgur.com/S7FJza5.png" />
+                <div class="card-body"> <img class="img" src={hospital} width={'50%'}/>
                     <div class="shadow"></div>
-                    <div class="card-title"> We're Free </div>
+                    <a href='https://tulsi-hospital.vercel.app/'  class="glow-on-hover" type="button">Hospitial</a>  <br /> <br />
                     <div class="card-subtitle">
-                        <p> <small class="text-muted">We spent thousands of hours creating on algorithm that does this for you in seconds. We collect a small fee from the professional after they meet your</small> </p>
+                        <p> <small class="text-muted">HTML: HTML is used to create and save web document. E.g. Notepad/Notepad++ <br />CSS : (Cascading Style Sheets) Create attractive Layout <br />Bootstrap : responsive design mobile freindly site <br />JavaScript: it is a programming language, commonly use with web browsers.</small> </p>
                     </div>
                 </div>
             </div>
         </div>
         <div class="card col-md-3 col-12">
             <div class="card-content">
-                <div class="card-body"> <img class="img" src="https://i.imgur.com/S7FJza5.png" />
+                <div class="card-body"> <img class="img" src={fooddelivery} width={'50%'} />
                     <div class="shadow"></div>
-                    <div class="card-title"> We're Free </div>
+                    <a href='https://my-portfolio-qk96.vercel.app/'  class="glow-on-hover" type="button">Food Zone</a>  <br /> <br />
                     <div class="card-subtitle">
-                        <p> <small class="text-muted">We spent thousands of hours creating on algorithm that does this for you in seconds. We collect a small fee from the professional after they meet your</small> </p>
+                        <p> <small class="text-muted">HTML: HTML is used to create and save web document. E.g. Notepad/Notepad++ <br />CSS : (Cascading Style Sheets) Create attractive Layout <br />Bootstrap : responsive design mobile freindly site <br />JavaScript: it is a programming language, commonly use with web browsers.</small> </p>
                     </div>
+                </div>
                 </div>
             </div>
         </div>

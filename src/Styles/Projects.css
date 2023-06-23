@@ -1,37 +1,25 @@
 head, body{background-color: lightcyan}.card{cursor: pointer}.hd{font-size: 25px;font-weight: 550}.card.hover, .card:hover{box-shadow: 0 20px 40px rgba(0, 0, 0, .2)}.img{margin-bottom: 35px;-webkit-filter: drop-shadow(5px 5px 5px #222);filter: drop-shadow(5px 5px 5px #222)}.card-title{font-weight: 600}button.focus, button:focus{outline: 0;box-shadow: none !important}.ft{margin-top: 25px}.chk{margin-bottom: 5px}.rck{margin-top: 20px;padding-bottom: 15px}
 
 
-
-.Box_Projects{
-    padding-left: 2rem;
+.second_section{
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    
 }
 
-.card {
-    margin-left: 1rem;
-    position: relative;
-   margin-bottom: 2rem;
-    word-wrap: break-word;
-    background-color: #fff;
-    background-clip: border-box;
-    border: 1px solid rgba(0,0,0,.125);
-    border-radius: 1rem;
+
+
+
+a{
+    text-decoration: none;
+    text-align: center;
+    padding-bottom: 1rem;
+    text-decoration: solid;
 }
 
-.plant {
-  
-    position: absolute;
-    width: 100px;
-    z-index: -1;
-    animation: entry 1.8s ease-in-out forwards, swing 3s ease-in-out 1.8s infinite alternate;
-}
-
-#plant1 {
-    right: 8rem;
-}
-
-#plant2 {
-    left: 7rem;
-}
+/* .Box_Projects{
+    text-align: center;
+} */
 
 
 
@@ -39,5 +27,64 @@ head, body{background-color: lightcyan}.card{cursor: pointer}.hd{font-size: 25px
 
 /* animaton code */
 
+.glow-on-hover {
+    padding-top: 15px;
+    width: 220px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #732626;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+}
 
+.glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.glow-on-hover:active {
+    color: #a61818
+}
+
+.glow-on-hover:active:after {
+    background: transparent;
+}
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #760202;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
 

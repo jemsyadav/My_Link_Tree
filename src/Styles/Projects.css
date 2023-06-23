@@ -88,3 +88,9 @@ a{
     100% { background-position: 0 0; }
 }
 
+@media only screen and (max-width: 600px) {
+    .glow-on-hover {
+      width: 10rem;
+    }
+  }
+
